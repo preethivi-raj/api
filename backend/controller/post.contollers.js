@@ -18,7 +18,9 @@ const postPosts = async (req , res)=>{
     try {
         const post = req.body;
         const newPost = new Post(post);
-        
+        if(!newPost){
+            return res.status(400).json({message :"Creating a new post in not done"})
+        }
         await newPost.save();
         res.status(200).json({message : "Post Created Successfully"})
 

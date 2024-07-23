@@ -3,10 +3,10 @@ const { getAllPosts  , postPosts , deletePosts , updatePosts} = require( "../con
 
 const router = express.Router();
 
-router.get("/" , getAllPosts)
-router.post("/post" , postPosts)
-router.delete("/delete/:id" , deletePosts)
-router.put("/update/:id" , updatePosts)
+router.get("/posts/" , getAllPosts)
+router.post("/posts/post" , postPosts)
+router.delete("/posts/delete/:id" , deletePosts)
+router.put("/posts/update/:id" , updatePosts)
 
 
 

@@ -1,2 +1,3 @@
 {"id" : "7fa5b75d-0b51-45d0-b240-24861b1b4d9f" , "dateTime" : "23-32-2024 07:32:54" , "message" : "Error : Not Allowes By CORS"}, 
 {"id" : "0d5b3eea-b9a2-4dec-ac61-de242051c7c1" , "dateTime" : "23-32-2024 07:32:54" , "message" : "Error : Not Allowes By CORS"}, 
+{"id" : "21fe706b-d47a-4247-bf77-d4ef804b1696" , "dateTime" : "23-46-2024 11:46:03" , "message" : "Error : Not Allowes By CORS"}, 

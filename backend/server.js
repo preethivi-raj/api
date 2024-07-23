@@ -6,6 +6,7 @@ const dbConnection = require( "./db/db.connection.js")
 const reqLogHandler = require(  "./middleware/reqLogHandler/reqLogHandler.js")
 const errorLogHandler = require( "./middleware/errorLogHandler/errorLogHandler.js")
 const corsOptions = require( "./middleware/cors/corsMiddleWare.js")
+const userRoutes = require("./routes/user.routes.js")
 
 dotenv.config()
 const app = express()
@@ -21,6 +22,7 @@ app.use(express.urlencoded(
 
 
 app.use("/api",postRoutes)
+app.use("/api" , userRoutes)
 
 
 
