@@ -29,7 +29,7 @@ app.use("/api" , userRoutes)
 app.use(errorLogHandler)
 
 app.listen(PORT , ()=>{
-    console.log(`Server i running on port ${PORT}`)
+    console.log(`Server is running on port ${PORT}`)
     dbConnection();
 })
 

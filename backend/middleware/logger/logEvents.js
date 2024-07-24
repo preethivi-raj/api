@@ -11,11 +11,11 @@ const logEvents = async (message , logName) => {
         const dataTime = `${format(new Date(), "dd-mm-yyyy hh:mm:ss")}`;
         const  logItem = `{"id" : "${uuid()}" , "dateTime" : "${dataTime}" , "message" : "${message}"}, \n`
 
-        if(!fs.existsSync(path.join(__dirname , "Logs"))){
-            fsPromises.mkdir(path.join(__dirname , "Logs"))
+        if(!fs.existsSync(path.join(__dirname , "backend","Logs"))){
+            fsPromises.mkdir(path.join(__dirname ,"backend", "Logs"))
         }
 
-        await fsPromises.appendFile(path.join(__dirname , "Logs" , logName) , logItem)
+        await fsPromises.appendFile(path.join(__dirname ,"backend", "Logs" , logName) , logItem)
     } catch (error) {
         console.log(`Error in Logging Middleware : ${error.message}`)
         res.status(500).json({message : "Internal Server Error"})   
