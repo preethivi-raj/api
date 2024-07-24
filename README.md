@@ -3,8 +3,8 @@ How to use this api?
 
 These are the data we provide in specific links :
 
-      1. Post Datas : https://api-tge1.onrender.com/api/posts/
-      2. User Data  : https://api-tge1.onrender.com/api/users/
+      1. Post Datas : (https://api-tge1.onrender.com/api/posts/)
+      2. User Datas : https://api-tge1.onrender.com/api/users/
       
 You can Send , update , delete (CRUD) operations in this api :
 
